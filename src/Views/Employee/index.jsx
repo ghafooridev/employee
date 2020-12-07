@@ -15,6 +15,10 @@ const Employee = function () {
     }
 
     const onCompareEmployee = function (employee) {
+        if (compareList.includes(employee)) {
+            const filterList = compareList.filter(item => item.id !== employee.id)
+            return setCompareList(filterList)
+        }
         setCompareList([...compareList, employee])
     }
 
@@ -37,11 +41,11 @@ const Employee = function () {
             </div>
             <div className={classes.table}>
                 {compareList.length
-                ?
-                <CompareTable
-                    compareList={compareList}
-                />
-:null
+                    ?
+                    <CompareTable
+                        compareList={compareList}
+                    />
+                    : null
                 }
             </div>
         </div>

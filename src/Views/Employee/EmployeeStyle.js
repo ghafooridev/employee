@@ -5,27 +5,27 @@ export const styles = makeStyles((theme) => ({
         margin: "auto",
         width: "80%",
     },
-    button:{
-        display:"none",
-        position:"absolute",
-        top:"40%",
-        left:"25%"
+    button: {
+        display: "none",
+        position: "absolute",
+        top: "40%",
+        left: "25%"
     },
     list: {
-        cursor:"pointer",
+        cursor: "pointer",
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
-        "& :hover":{
-            "& button":{
-                display:"block"
+        "& :hover": {
+            "& button": {
+                display: "block"
             }
         }
     },
     card: {
-        position:"relative",
+        position: "relative",
         marginTop: 20,
-        marginRight:20,
+        marginRight: 20,
         "& .title": {
             padding: 10,
             display: "flex",
@@ -35,7 +35,7 @@ export const styles = makeStyles((theme) => ({
             padding: 10,
         }
     },
-    table:{
-        margin:"20px 0"
+    table: {
+        margin: "20px 0"
     }
 }))
